@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { GridGenerator, HexGrid, Layout, Path, Hexagon, Text } from 'react-hexgrid';
 import { Row, Col, Button } from 'react-bootstrap'
-import data from './utils/hexagonData'
+import data from './utils/hexagonData';
+
+import Tableau from './Tableau';
 
 const Hexagons = () => {
-
     const [activeTile, setActiveTile] = useState(null);
 
     const config = {
@@ -78,6 +79,7 @@ const Hexagons = () => {
                         </>
                     )
                 }
+                <Tableau />
             </div>
         </div>
     );
